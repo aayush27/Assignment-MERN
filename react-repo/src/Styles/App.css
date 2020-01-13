@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.header-container {
+  display: flex !important;
+    justify-content: space-between !important;
+}
+
+.custom-link {
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  margin-bottom: 0px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.userDetails-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.authentication-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+}
+
+.signup-container {
+  height: 42px;
+  width: 100%;
+}
+
+.navbar-dark {
+  background: #1CB275;
+  max-height: 80px;
+}
+.App-logoTop {
+  width: 145px;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 120px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.App-header {
+  background-color: #222;
+  height: 500px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App-title {
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 15px;
+}
+.Welcome-title {
+  font-family: 'Open Sans', sans-serif;
+}
+.App-intro {
+  font-size: large;
+}
+.navbar-nav li {
+  background: #000;
+  margin-left: 10px;
+}
+
+.table-header {
+  background-color: #1CB275;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.speakerHeading {
+  width: 100%;
+  margin: auto;
+}
+.section1 {
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.5);
+  background: #fafafa;
+  min-height: 300px;
+}
+.speakerWrapper {
+  justify-content: center;
+}
+.footer {
+  height: 60px;
+  background: #222;
+  color: #fff;  
+}
+.innerFooter {
+  align-items: center;
+  height: 100%;
+}
+.innerContainer {
+    height: 100%;
+}
+.search-barWrapper {
+  background: #222;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.search-barWrapper button {
+  margin-right: 10px;
+}
+.images_wrapper img {
+  width: 100%;
+  height: 300px;
+  margin-top: 15px;
+}
+.images_wrapper{
+  margin: 0px !important;
+  margin-right: 15px !important;
+}
+.image_wrapper_inner {
+  padding-right: 0px !important;
+  box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.5);
+  background: #fafafa;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 0px;
+}
+nav ul li {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a:hover {
+  text-decoration: none;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #50bad7;
+  }
+}
+.formFields {
+  width: 100%;
+}
+
+.ButtonContainer {
+  background-color: #0E704A !important;
+    color: white !important;
+    border-color: #0E704A !important;
+    border-style: solid;
+}
+
+.button-wrapper {
+  padding-right: 0px !important;
+  padding-left: 2px !important;
+}
+
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+  opacity: 1 !important; /* Firefox */
+}
+.form-control {
+  background-color: #1CB275 !important;
+  color: white !important;
+}
+
+.formWrapper {
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+}
